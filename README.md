@@ -1,7 +1,7 @@
 # ETLJob
 Data ingestion for HDFS from RDBMS and merging the latest changes.
 
-This ETL job is reponsible for ingesting data for HDFS from RDBMS. 
+This ETL job is responsible for ingesting data for HDFS from RDBMS. 
 Sqoop tool is used for data ingestion and Spark is used for merging the daily changes with the base data.
 Sqoop import job will be created for each incremetal import and this is a one-time activity.
 Once the job is created, it will be executed for the base data preparation for the very first time (inital run) and later on it can be executed for bringing the latest changes to HDFS.
